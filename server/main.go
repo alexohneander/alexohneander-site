@@ -16,6 +16,10 @@ func main() {
             return re.String(200, "Hello world!")
         })
 
+        se.Router.GET("/version", func(re *core.RequestEvent) error {
+            return re.JSON(200, "{ 'status': 'ok', 'version': 'v0.1.0' }" )
+        })
+
         return se.Next()
     })
 
