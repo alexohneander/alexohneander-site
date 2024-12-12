@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gatsby-source-pocketbase": "github:alexohneander/gatsby-source-pocketbase"
+  },
+  "devDependencies": {
+    "daisyui": "^4.12.20"
+  }
+}
