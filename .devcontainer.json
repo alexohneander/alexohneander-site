@@ -4,7 +4,9 @@
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/go:1": {}
+	},
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -24,7 +26,11 @@
 	// More info: https://containers.dev/implementors/json_reference/#port-attributes
 	"portsAttributes": {
 		"8000": {
-			"label": "Hello Remote World",
+			"label": "Client Frontend",
+			"onAutoForward": "notify"
+		},
+		"8090": {
+			"label": "Server Frontend/API",
 			"onAutoForward": "notify"
 		}
 	},
